@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Counter</title>
+</head>
+<body>
+  <h1>Счётчик кликов</h1>
+  <button onclick="countClicks()">Кликни меня</button>
+  <p>Кликов: <span id="counter">0</span></p>
+
+  <script>
+    let count = 0;
+    function countClicks() {
+      count++;
+      document.getElementById("counter").innerText = count;
+    }
+  </script>
+</body>
+</html>
